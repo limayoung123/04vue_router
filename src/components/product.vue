@@ -9,7 +9,7 @@
     
               <img :src="pdata[i].image" alt="" class="w-100">
     
-            {{pdata[i].content}}
+            <div @click="$emit('pOpen',pdata[i].id)">{{pdata[i].content}}{{pdata[i].price}}</div>
           </div>
         </div>
     
