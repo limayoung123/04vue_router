@@ -4,16 +4,45 @@
     <div class="container">
       <h2>COMPANY</h2>
       <p>자주 묻는 질문입니다.</p>
-         <div class="row mb-5">
-          <div class="col-sm-6 col-md-12 mb-5" v-for="(item,i) in bdata" :key="i">
-    
-    
-            {{bdata[i].title}}
-          </div>
-        </div>
-    
     </div>
   </div>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">*</th>
+      <th scope="col">Question</th>
+      <th scope="col">Content</th>
+      <th scope="col">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{bdata[0].title}}</td>
+      <td>{{bdata[0].content}}</td>
+      <td>{{bdata[0].date}}</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>{{bdata[1].title}}</td>
+      <td>{{bdata[1].content}}</td>
+      <td>{{bdata[1].date}}</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>{{bdata[2].title}}</td>
+      <td>{{bdata[2].content}}</td>
+      <td>{{bdata[2].date}}</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>{{bdata[3].title}}</td>
+      <td>{{bdata[3].content}}</td>
+      <td>{{bdata[3].date}}</td>
+    </tr>
+  </tbody>
+</table>
+
 </template>
 
 <script>
